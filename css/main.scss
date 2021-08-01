@@ -1,0 +1,243 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+@import "./variables";
+
+
+section{
+    padding: 3rem 3rem;
+    background: linear-gradient(315deg, #ffcbcb 0%, #c1dfff 74%);
+    ;
+}
+
+.container{
+    margin: auto;
+    width: min(90%, 80%);
+    // border: 2px solid red;
+}
+
+.topper{
+    display: flex;
+    flex-direction: row;
+    
+    .topper-left{
+        flex: 10%;
+        margin-right: 13px;
+        // border: 2px solid blue;
+
+        h1{
+            font-size: 3em;
+            color: $accent;
+            font-family: righteous;
+            font-weight: $bold;
+            line-height: 1;
+        }
+
+        p{
+            font-family: candara;
+            width: 100%;
+            white-space: wrap;
+            margin: 24px 12px 12px 0;
+        }
+    }
+
+    .topper-right{
+        flex: 30%;
+        border: 2px solid green;
+        padding: 0 0 0 30px;
+
+        .horizon1{
+            margin: 12px 0 1px 0;
+        }
+
+        .horizon2{
+            margin: 12px 0 12px 50px;
+        }
+
+        .horizon3{
+            margin: 12px 0 12px 100px;
+
+        }
+
+        .horizon{
+            width: 80%;
+            height: 50px;
+            background-color: $grayb;
+            // margin: 12px 0 12px 0;
+            padding: auto;
+            border-radius: 4px;
+            position: relative;
+            
+
+            .str{
+                display: flex;
+                // position: absolute;
+                border: 2px solid red;
+
+                .spans{
+                    margin-right: 25px;
+                }
+
+                span{
+                    justify-content: center;
+                    // line-height: 25px;
+                    font-size: 11px;
+                    align-items: center;
+                }
+
+                .fa{
+                    color: orange;
+                }
+
+                h3{
+                    font-family: bahnschrift;
+                    color: $grayw;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.bottomer{
+    // border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+
+    .card{
+        background-color: $accent;
+        margin-right: 24px;
+        padding: 2.5rem 1.5rem;
+        color: white;
+        border-radius: 6px;
+        width: 100%;
+        margin-top: 24px;
+
+        .card-top{
+            display: flex;
+            // border: 2px solid red;
+            margin: 0 0 13px 0;
+        }
+    
+        .card-img{
+            width: 13%;
+            height: 100%;
+    
+            img{border-radius: 50%;
+                display: block;
+                width: 100%;
+            }
+        }
+        
+        .card-img-below{
+            margin: 0;
+            margin: 0 0 0 23px;
+
+            h2{
+                font-family: berlin sans fb;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            h3{
+                font-family: berlin sans fb;
+                font-size: 12px;
+                color: $pink;
+                font-weight: 450;
+            }
+
+        }
+
+        .card-bottom{
+            p{
+                font-family: comfortaa;
+            }
+        }
+    }
+
+    
+}
+
+@media (max-width:768px){
+    section{
+        padding: 3rem 2rem;
+        border: 2px solid black;
+        position: relative;
+    }
+
+    .container{
+        margin: auto;
+        width: 100%;
+        // width: min(80%,70%);
+        border: 2px solid yellow;
+    }
+
+    .topper{
+        display: flex;
+        flex-direction: column;
+
+        .topper-right{
+            flex: 100%;
+            // border: 2px solid green;
+            padding: 0 0 0 0px;
+            border: 2px solid red;
+            flex-wrap: nowrap;
+    
+            .horizon1{
+                margin: 12px 0 12px 0;
+            }
+    
+            .horizon2{
+                margin: 12px 0 12px 0;
+            }
+    
+            .horizon3{
+                margin: 12px 0 12px 0;
+            }
+    
+            .horizon{
+                width: 100%;
+                height: 50px;
+                background-color: $grayb;
+                margin: 12px 0 12px 0;
+                padding: 0px 0px;
+                border-radius: 4px;
+    
+                .str{
+                    display: flex;
+                    flex-direction: column;
+    
+                    .spans{
+                        text-align: center;
+                        margin-right: 0px;
+                    }
+    
+                    span{
+                        justify-content: center;
+                        line-height: 0px;
+                        // margin-top: 15px;
+                    }
+    
+                    .fa{
+                        color: orange;
+                    }
+    
+                    h3{
+                        font-family: bahnschrift;
+                        color: $grayw;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottomer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

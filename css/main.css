@@ -1,0 +1,281 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 3rem 3rem;
+  background: linear-gradient(315deg, #ffcbcb 0%, #c1dfff 74%);
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.topper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.topper .topper-left {
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+  margin-right: 13px;
+}
+
+.topper .topper-left h1 {
+  font-size: 3em;
+  color: #5c005c;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.topper .topper-left p {
+  font-family: candara;
+  width: 100%;
+  white-space: wrap;
+  margin: 24px 12px 12px 0;
+}
+
+.topper .topper-right {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  /* border: 2px solid green; */
+  padding: 0 0 0 30px;
+}
+
+.topper .topper-right .horizon1 {
+  margin: 12px 0 1px 0;
+}
+
+.topper .topper-right .horizon2 {
+  margin: 12px 0 12px 50px;
+}
+
+.topper .topper-right .horizon3 {
+  margin: 12px 0 12px 100px;
+}
+
+.topper .topper-right .horizon {
+  width: 80%;
+  height: 50px;
+  background-color: #937b92;
+  padding: auto;
+  border-radius: 4px;
+  position: relative;
+}
+
+.topper .topper-right .horizon .str {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+.topper .topper-right .horizon .str .spans {
+  margin-right: 3px;
+  /* border: 2px solid blue; */
+  align-items: center;
+  justify-content: center;
+  white-space: wrap;
+}
+
+.topper .topper-right .horizon .str span {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topper .topper-right .horizon .str .fas {
+  color: orange;
+}
+
+.topper .topper-right .horizon .str .inner{
+  display: flex;
+  position: absolute;
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  padding: 0 0 0 12px;
+}
+
+.topper .topper-right .horizon .str h3 {
+  font-family: bahnschrift;
+  color: #f7f2f7;
+  text-align: center;
+}
+
+.bottomer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bottomer .card {
+  background-color: #5c005c;
+  margin-right: 24px;
+  padding: 2.5rem 1.5rem;
+  color: white;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.bottomer .card .card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 13px 0;
+}
+
+.bottomer .card .card-img {
+  width: 13%;
+  height: 100%;
+}
+
+.bottomer .card .card-img img {
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+}
+
+.bottomer .card .card-img-below {
+  margin: 0;
+  margin: 0 0 0 23px;
+}
+
+.bottomer .card .card-img-below h2 {
+  font-family: berlin sans fb;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.bottomer .card .card-img-below h3 {
+  font-family: berlin sans fb;
+  font-size: 12px;
+  color: #ee68a4;
+  font-weight: 450;
+}
+
+.bottomer .card .card-bottom p {
+  font-family: comfortaa;
+}
+
+@media  (max-width: 768px){
+  section {
+    padding: 3rem 2rem;
+    position: relative;
+  }
+  .container {
+    margin: auto;
+    width: 100%;
+  }
+  .topper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topper .topper-right {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    padding: 0 0 0 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .topper .topper-right .horizon1 {
+    margin: 12px 0 12px 0;
+  }
+  .topper .topper-right .horizon2 {
+    margin: 12px 0 12px 0;
+  }
+  .topper .topper-right .horizon3 {
+    margin: 12px 0 12px 0;
+  }
+  .topper .topper-right .horizon {
+    width: 100%;
+    height: 50px;
+    background-color: #937b92;
+    margin: 12px 0 12px 0;
+    padding: 0px 0px;
+  }
+  .topper .topper-right .str {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topper .topper-right .str .spans {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .topper .topper-right .str span {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 0px;
+  }
+  .topper .topper-right .str .fa {
+    color: orange;
+  }
+  .topper .topper-right .str h3 {
+    font-family: bahnschrift;
+    color: #f7f2f7;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .bottomer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  }
+
+  .topper .topper-right .horizon .str .inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topper .topper-left h1 {
+    text-align: center;
+  }
+
+  .topper .topper-left p {
+    text-align: center;
+  }
+
+
+
+/*# sourceMappingURL=main.css.map */
